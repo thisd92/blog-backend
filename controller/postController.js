@@ -36,7 +36,7 @@ exports.findAll = async (req, res, next) => {
 exports.findById = async (req, res, next) => {
     try {
         const { params: { id } } = req
-        const posts = await Posts.findById(id)
+        const posts = await Post.findById(id)
         if (!posts) {
             res.status(404).json({
                 error: true,
