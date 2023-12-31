@@ -9,6 +9,8 @@ const app = express();
 
 const userRouter = require('./routes/userRoutes')
 const postsRouter = require('./routes/postsRoutes')
+const characterRouter = require('./routes/characterRoutes')
+const contactRouter = require('./routes/contactRoutes')
 
 app.use(express.json());
 
@@ -23,6 +25,8 @@ app.use(cors({
 
 app.use('/api', postsRouter)
 app.use('/api', userRouter)
+app.use('/api', characterRouter)
+app.use('/api', contactRouter)
 
 app.listen(port, () => {
     console.log(`Listening app on port ${port}`)
