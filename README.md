@@ -24,7 +24,7 @@ Este repositório contém o código-fonte de um backend em Node.js/Express para 
 
 1. Clone o repositório para sua máquina local:
     ```bash
-   git clone https://github.com/seu-usuario/blog-backend.git
+   git clone https://github.com/thisd92/blog-backend.git
    cd blog-backend
     ```
 2. Instale as dependências do projeto:
